@@ -1,5 +1,9 @@
 # Lenovo_G400_EFI
-`Lenovo G400 EFI for Mojave10.14.6`
+>Lenovo G400 EFI for Mojave10.14.6 它致力于让您直接将EFI替换掉就可以开箱即用。\
+>1.Clover登陆主题换成更漂亮的YosemiteLogin \
+>2.对基本的补丁做了添加 \
+>3.对声卡和显存已经进行了处理。但是像无线网卡还是需要个人去配置的，方法见下文介绍
+
 
 ## 机型以及配置说明
 * 电脑型号	联想 Lenovo G400 20235 笔记本电脑    
