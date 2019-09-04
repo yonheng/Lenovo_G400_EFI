@@ -25,7 +25,7 @@
 4. 内存(成功驱动)
 5. 无线网卡(成功驱动，但是需要一些手段.安装方法见补充知识介绍部分)
 6. 亮度调节(已经自动加入补丁，不需要任何配置)
-7. 未完待续
+7. ...
 
 ## 无法实现
 1. 在笔记本上独显无法被驱动(原理性问题,但是好像可以通过屏蔽集显解决，但是g400应该做不到)
@@ -41,7 +41,8 @@
 5. [一个推荐用来下载驱动和优化工具的国内网站](http://www.pc6.com/mac/qdcx_811_1.html)
 6. [高通无线网卡驱动安装用法 AR946X AR9485 AR9565 亲测可用](http://bbs.pcbeta.com/viewthread-1806854-1-2.html)
 7. [电脑亮度的驱动安装方法(国外大神官方指导)](https://bitbucket.org/RehabMan/applebacklightfixup/src/master/README.md)
-8. 未完待续
+8. [声卡id的注入方法](https://www.jianshu.com/p/955ce6706ae2)
+9. ...
 ---
 ## 操作系统基本知识
 1. 目前来说固件大致分两种:*Legacy BIOS*和*BIOS UEFI*,他们统称为BIOS，但是为了区别他们，我们把前者叫做bios,把后者叫做uefi。这个可以开机在BIOS中进行设置。至于选取的原则是：**能用UEFI就用UEFI，除非是像WindowsXP这种不支持MBR的系统。** 同样，分区表也可以分两种：*MBR*和*GPT*，至于选取原则见后续说明。
@@ -50,7 +51,7 @@
 4. 一般来说，我们应该使用**UEFI+GPT**或者**BIOS+MBR**这两个组合，其它的组合如*UEFI+MBR*和*BIOS+GPT*会产生问题(archwiki还是gentoo上曾经看到过一篇文章专门介绍这两种奇怪组合，但是找不到了，见谅)。而对于HACKINTOSH而言，我们应该选择**UEFI+GPT**
 5. [bootloader的种类和介绍](https://wiki.archlinux.org/index.php/Arch_boot_process#Boot_loader)
 6. [Linux启动过程](https://en.wikipedia.org/wiki/Linux_startup_process)
-7. 未完待续
+7. ...
 
 
 
