@@ -32,6 +32,22 @@
 2. 蓝牙在10.13之后就无法被成功驱动，即使驱动也无法进行关闭和连接操作，不过由于复杂和对于蓝牙的非必要需求，所以去掉了该模块。当然也可以使之操作，操作方法见链接：[在10.13利用虚拟机软件实现BTFirmwareUploader的工作](https://osxlatitude.com/forums/topic/10127-updated-nov-2017-fix-btfirmwareuploader-in-macos-high-sierra/)
 3. 开启HiDPI从而实现画质更清晰加载，这个由于电脑本身属于1366*768的屏幕，所以开启也没有多大意义。所以没有尝试，不过如果外接1080P屏幕或以上，则可以尝试使用。方法见链接[HiDPI的介绍和工具说明](https://www.sqlsec.com/2018/09/hidpi.html)
 
+## 驱动名称介绍
+1. FakeSMC.kext(安装hackintosh的核心驱动程序，没有它就没法在电脑上运行MacOS)必备
+2. Lilu.kext(内核扩展程序，是其它程序的前置运行程序)必备
+3. WhateverGreen.kext(显卡综合修复，整合核显，AMD,NVIDIA的综合修复)必备
+4. AppleALC.kext(动态对系统注入必要的文件/打补丁以驱动声卡)
+5. IntelGraphicsDVMTFixup.kext(修正 Broadwell/Skylake 平台核显因 DVMT 不足而导致的死机(依赖于Lilu)
+6. AirportBrcmFixup(修补Broadcom Wi-Fi综合问题,是博通网上需要的)
+7. FakePCIID.kext(仿冒PCI设备核心驱动，部分驱动依赖于它)
+8. ACPIBatteryManager.kext(笔记本电池管理驱动)
+9. RealtekRTL8xxx.kext(Realtek 8xxx网卡驱动程序)
+10. VoodooPS2Controller.kext(Voodoo键盘/鼠标驱动程序)
+11. RtWlanU.kext(USB网卡驱动)
+12. HoRNDIS.kext(实现Mac通过安卓上网的驱动)
+13. ...
+
+
 ## 补充知识介绍
 0. [国外大神发表的驱动地(国内各种论坛的基本上都是从这个拷贝的)](https://bitbucket.org/RehabMan/)
 1. [安装10.14 Mojave所需硬件以及常见的问题](https://www.tonymacx86.com/threads/readme-common-problems-and-workarounds-on-10-14-mojave.255823/)
